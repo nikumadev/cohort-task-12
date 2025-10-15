@@ -39,9 +39,29 @@ body {
 }
 
 body {
-  font-family: Gilroy, Arial, Helvetica, sans-serif;
   background-color: #121212;
   color: white;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin info-heading {
+  font-size: 2.25rem;
+  font-family: Chillax-Light, Gilroy, Arial, Helvetica, sans-serif;
+  color: #f4f2ed;
+  line-height: 110%;
+}
+
+@mixin info-text {
+  color: #f4f2ed99;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -136,6 +156,68 @@ main {
       }
     }
   }
+
+  .info {
+    width: 100%;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "info-top info-right"
+      "info-left info-bottom";
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    text-align: center;
+
+    .info-top {
+      @include flex-center();
+
+      p {
+        @include info-text();
+      }
+
+      h5 {
+        @include info-heading();
+      }
+    }
+
+    .info-left {
+      @include flex-center();
+
+      p {
+        @include info-text();
+      }
+
+      h5 {
+        @include info-heading();
+      }
+    }
+
+    .info-right {
+      @include flex-center();
+
+      p {
+        @include info-text();
+      }
+
+      h5 {
+        @include info-heading();
+      }
+    }
+
+    .info-bottom {
+      @include flex-center();
+
+      p {
+        @include info-text();
+      }
+
+      h5 {
+        @include info-heading();
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -168,6 +250,44 @@ main {
           p {
             width: 100%;
           }
+        }
+      }
+    }
+
+    .info {
+      width: 100%;
+      padding: 3rem;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas: "info-top info-left info-right info-bottom";
+      grid-column-gap: 4rem;
+      grid-row-gap: 4rem;
+
+      .info-top {
+        h5 {
+          font-size: 4rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      .info-left {
+        h5 {
+          font-size: 4rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      .info-right {
+        h5 {
+          font-size: 4rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      .info-bottom {
+        h5 {
+          font-size: 4rem;
+          margin-top: 0.5rem;
         }
       }
     }
