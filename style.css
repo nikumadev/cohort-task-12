@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@font-face {
+  font-family: "Chillax-Extralight";
+  src: url("./assets/fonts/Chillax-Extralight.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Chillax-Light";
+  src: url("./assets/fonts/Chillax-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Chillax-Regular";
+  src: url("./assets/fonts/Chillax-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Chillax-Medium";
+  src: url("./assets/fonts/Chillax-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Chillax-Semibold";
+  src: url("./assets/fonts/Chillax-Semibold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Chillax-Bold";
+  src: url("./assets/fonts/Chillax-Bold.woff2") format("woff2");
+}
 * {
   margin: 0;
   padding: 0;
@@ -64,6 +88,7 @@ main .hero .hero-bottom h1 {
   font-weight: 300;
   text-transform: uppercase;
   color: #f4f2ed;
+  font-family: "Chillax-Regular", "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
 }
 main .hero .hero-bottom p {
   color: rgba(244, 242, 237, 0.6);
@@ -95,6 +120,7 @@ main .hero .hero-bottom button {
   color: white;
   font-size: 0.875rem;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 900px) {
@@ -118,6 +144,7 @@ main .hero .hero-bottom button {
   }
   main .hero .hero-bottom .hero-text h1 {
     font-size: 3.5rem;
+    line-height: 120%;
   }
   main .hero .hero-bottom .hero-text p {
     width: 100%;
