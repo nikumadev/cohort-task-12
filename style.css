@@ -686,6 +686,217 @@ main .contact button svg {
   width: 0.875rem;
   color: #f4f2ed;
 }
+main footer {
+  margin-top: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "footer-top" "footer-middle" "footer-bottom";
+}
+main footer .footer-top {
+  grid-area: footer-top;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border-radius: 0.875rem;
+}
+main footer .footer-top h5 {
+  font-size: 1.5rem;
+  font-family: Chillax-Extralight, Gilroy, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #f4f2ed;
+}
+main footer .footer-top .footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+main footer .footer-top .footer-social a {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+  text-align: center;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main footer .footer-top .footer-social a svg {
+  color: #f4f2ed;
+  stroke-width: 1px;
+}
+main footer .footer-middle {
+  margin-top: 1rem;
+  background-color: #1e1e1e;
+  grid-area: footer-middle;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border-radius: 0.875rem;
+}
+main footer .footer-middle .pages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main footer .footer-middle .pages h5 {
+  font-size: 1.25rem;
+  color: #f4f2ed;
+  font-family: Chillax-Light, Gilroy, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 160%;
+}
+main footer .footer-middle .pages a {
+  color: rgba(244, 242, 237, 0.6);
+  font-family: "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 160%;
+}
+main footer .footer-middle .pages button {
+  display: inline-block;
+  width: auto;
+  background-color: #cebd63;
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 160%;
+  border-radius: 0.875rem;
+  align-self: flex-start;
+}
+main footer .footer-middle .cms {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main footer .footer-middle .cms h5 {
+  font-size: 1.25rem;
+  color: #f4f2ed;
+  font-family: Chillax-Light, Gilroy, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 160%;
+}
+main footer .footer-middle .cms a {
+  color: rgba(244, 242, 237, 0.6);
+  font-family: "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 160%;
+}
+main footer .footer-middle .cms button {
+  display: inline-block;
+  width: auto;
+  background-color: #cebd63;
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 160%;
+  border-radius: 0.875rem;
+  align-self: flex-start;
+}
+main footer .footer-middle .utility {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main footer .footer-middle .utility h5 {
+  font-size: 1.25rem;
+  color: #f4f2ed;
+  font-family: Chillax-Light, Gilroy, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 160%;
+}
+main footer .footer-middle .utility a {
+  color: rgba(244, 242, 237, 0.6);
+  font-family: "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+main footer .footer-middle .utility button {
+  display: inline-block;
+  width: auto;
+  background-color: #cebd63;
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 160%;
+  border-radius: 0.875rem;
+  align-self: flex-start;
+}
+main footer .footer-bottom {
+  grid-area: footer-bottom;
+  margin-top: 1rem;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.875rem;
+  color: rgba(244, 242, 237, 0.6);
+  align-items: center;
+  justify-content: center;
+}
+main footer .footer-bottom .credits-top {
+  text-align: center;
+  font-size: 0.875rem;
+  font-family: "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+main footer .footer-bottom .credits-top a {
+  color: #f4f2ed;
+}
+main footer .footer-bottom .credits-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main footer .footer-bottom .credits-bottom .btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+main footer .footer-bottom .credits-bottom .btn svg {
+  color: white;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+  padding: 0.75rem;
+}
+main footer .footer-bottom .credits-bottom button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  align-self: flex-start;
+  width: auto;
+  color: white;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
+}
 
 @media screen and (min-width: 900px) {
   main {
@@ -844,5 +1055,27 @@ main .contact button svg {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+  }
+  main footer {
+    width: 100%;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 4fr 1fr;
+    grid-template-areas: "footer-top footer-middle" "footer-top footer-bottom";
+    gap: 1rem;
+  }
+  main footer .footer-top {
+    justify-content: space-between;
+  }
+  main footer .footer-middle {
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main footer .footer-bottom {
+    margin-top: 0;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
