@@ -33,7 +33,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
+  font-family: Gilroy, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -73,9 +73,14 @@ main .hero .hero-bottom {
   flex-direction: column;
   gap: 4rem;
 }
-main .hero .hero-bottom label {
+main .hero .hero-bottom .label {
   font-size: 0.875rem;
   font-weight: 500;
+  font-family: "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
+  color: #f4f2ed;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 160%;
 }
 main .hero .hero-bottom .hero-text {
   display: flex;
@@ -204,6 +209,120 @@ main .info .info-bottom h5 {
   color: #f4f2ed;
   line-height: 110%;
 }
+main .philosophy {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "philo-right" "philo-top" "philo-left" "philo-bottom";
+  gap: 0.75rem;
+}
+main .philosophy .philo-right {
+  grid-area: philo-right;
+  width: 100%;
+}
+main .philosophy .philo-right img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.75rem;
+}
+main .philosophy .philo-top {
+  grid-area: philo-top;
+  width: 100%;
+  padding: 1.75rem;
+  background-color: #1e1e1e;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+main .philosophy .philo-top .philo-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
+  color: #f4f2ed;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 160%;
+}
+main .philosophy .philo-top .philo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .philosophy .philo-top h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #f4f2ed;
+  font-family: "Chillax-Regular", "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
+}
+main .philosophy .philo-top .multi-column {
+  -moz-column-count: 1;
+       column-count: 1;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+main .philosophy .philo-top p {
+  color: rgba(244, 242, 237, 0.6);
+  font-size: 1rem;
+  line-height: 2rem;
+  width: 100%;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 160%;
+}
+main .philosophy .philo-left {
+  grid-area: philo-left;
+  width: 100%;
+}
+main .philosophy .philo-left img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.75rem;
+}
+main .philosophy .philo-bottom {
+  grid-area: philo-bottom;
+  width: 100%;
+  padding: 1.75rem;
+  background-color: #1e1e1e;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+main .philosophy .philo-bottom .philo-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
+  color: #f4f2ed;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 160%;
+}
+main .philosophy .philo-bottom .philo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .philosophy .philo-bottom h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #f4f2ed;
+  font-family: "Chillax-Regular", "Roboto Mono", monospace, Gilroy, Arial, Helvetica, sans-serif;
+}
+main .philosophy .philo-bottom p {
+  color: rgba(244, 242, 237, 0.6);
+  font-size: 1rem;
+  line-height: 2rem;
+  width: 100%;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 160%;
+}
 
 @media screen and (min-width: 900px) {
   main {
@@ -255,5 +374,55 @@ main .info .info-bottom h5 {
   main .info .info-bottom h5 {
     font-size: 4rem;
     margin-top: 0.5rem;
+  }
+  main .philosophy {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "philo-top philo-right" "philo-left philo-bottom";
+  }
+  main .philosophy .philo-top {
+    padding: 3rem;
+    justify-content: space-between;
+  }
+  main .philosophy .philo-top .multi-column {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+  main .philosophy .philo-top .philo-text {
+    gap: 1.5rem;
+  }
+  main .philosophy .philo-top .philo-text h1 {
+    font-size: 3rem;
+    line-height: 120%;
+  }
+  main .philosophy .philo-top .philo-text p {
+    width: 100%;
+    font-size: 1.125rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 160%;
+  }
+  main .philosophy .philo-bottom {
+    padding: 3rem;
+    justify-content: space-between;
+  }
+  main .philosophy .philo-bottom .multi-column {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+  main .philosophy .philo-bottom .philo-text {
+    gap: 1.5rem;
+  }
+  main .philosophy .philo-bottom .philo-text h1 {
+    font-size: 3rem;
+    line-height: 120%;
+  }
+  main .philosophy .philo-bottom .philo-text p {
+    width: 100%;
+    font-size: 1.125rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 160%;
   }
 }/*# sourceMappingURL=style.css.map */
